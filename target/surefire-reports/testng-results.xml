@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-30T12:11:03 IST" name="Suite" finished-at="2025-10-30T12:11:20 IST" duration-ms="16320">
+    <groups>
+      <group name="sanity">
+        <method signature="TC_001_login_orangeHRM.loginTestorHRM()[pri:0, instance:testCasesOrHRM.TC_001_login_orangeHRM@1817d444]" name="loginTestorHRM" class="testCasesOrHRM.TC_001_login_orangeHRM"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-10-30T12:11:03 IST" name="OrHRM_test" finished-at="2025-10-30T12:11:20 IST" duration-ms="16320">
+      <class name="testCasesOrHRM.TC_001_login_orangeHRM">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCasesOrHRM.TC_001_login_orangeHRM@1817d444]" started-at="2025-10-30T12:11:04 IST" name="setUp" finished-at="2025-10-30T12:11:12 IST" duration-ms="7521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestorHRM()[pri:0, instance:testCasesOrHRM.TC_001_login_orangeHRM@1817d444]" started-at="2025-10-30T12:11:12 IST" name="loginTestorHRM" finished-at="2025-10-30T12:11:13 IST" duration-ms="1164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestorHRM -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCasesOrHRM.TC_001_login_orangeHRM@1817d444]" started-at="2025-10-30T12:11:14 IST" name="tearDown" finished-at="2025-10-30T12:11:20 IST" duration-ms="5390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCasesOrHRM.TC_001_login_orangeHRM -->
+    </test> <!-- OrHRM_test -->
+  </suite> <!-- Suite -->
+</testng-results>

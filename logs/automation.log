@@ -1,0 +1,50 @@
+2025-10-30 07:03:13 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 07:03:13 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 07:03:14 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 07:03:31 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 07:22:41 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 07:22:41 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 07:22:42 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 07:22:46 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:07:32 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:07:32 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:07:33 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:07:37 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:11:55 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:11:55 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:11:56 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:12:00 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:16:39 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:16:39 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:16:39 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:16:47 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:18:20 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:18:20 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:18:21 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:18:29 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:36:52 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:36:52 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:36:53 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:36:56 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:39:25 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:39:25 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:39:25 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:39:29 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:47:02 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:47:02 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:47:04 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:47:08 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 08:49:03 INFO  TC_003_addEmployee:64 - User has entered the user name
+2025-10-30 08:49:03 INFO  TC_003_addEmployee:66 - User has entered the password
+2025-10-30 08:49:03 INFO  TC_003_addEmployee:68 - User has clicked on the login button
+2025-10-30 08:49:09 INFO  TC_003_addEmployee:18 - User has clicked on PIM link
+2025-10-30 12:08:01 INFO  TC_001_login_orangeHRM:14 - **********************Test Case 001 Orange HRM is started **********************
+2025-10-30 12:08:02 INFO  TC_001_login_orangeHRM:19 - User has entered the user name
+2025-10-30 12:08:03 INFO  TC_001_login_orangeHRM:21 - User has entered the password
+2025-10-30 12:08:03 INFO  TC_001_login_orangeHRM:23 - User has clicked on the login button
+2025-10-30 12:08:03 INFO  TC_001_login_orangeHRM:25 - **********************Test Case 001 Orange HRM is completed **********************
+2025-10-30 12:11:12 INFO  TC_001_login_orangeHRM:14 - **********************Test Case 001 Orange HRM is started **********************
+2025-10-30 12:11:13 INFO  TC_001_login_orangeHRM:19 - User has entered the user name
+2025-10-30 12:11:13 INFO  TC_001_login_orangeHRM:21 - User has entered the password
+2025-10-30 12:11:13 INFO  TC_001_login_orangeHRM:23 - User has clicked on the login button
+2025-10-30 12:11:13 INFO  TC_001_login_orangeHRM:25 - **********************Test Case 001 Orange HRM is completed **********************
