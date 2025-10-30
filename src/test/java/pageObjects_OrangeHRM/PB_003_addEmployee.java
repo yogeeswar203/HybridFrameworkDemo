@@ -70,6 +70,9 @@ public class PB_003_addEmployee extends BasePage{
 	@FindBy(xpath="(//div[@class='oxd-select-text-input'])[3]")
 	WebElement drp_blood_type;
 	
+	// adding xpath for commit purpose
+	@FindBy(xpath="")
+	WebElement e1;
 
 	
 	
