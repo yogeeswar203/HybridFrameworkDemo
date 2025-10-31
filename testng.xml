@@ -15,9 +15,9 @@
   	<parameter name="os" value="windows"/>
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCasesOrHRM.TC_001_login_orangeHRM"/>
+     <!--  <class name="testCasesOrHRM.TC_001_login_orangeHRM"/> -->
       <!--  <class name="testCasesOrHRM.TC_002_EmployeeSearch"/> -->
-      <!--  <class name="testCasesOrHRM.TC_003_addEmployee"/> -->
+       <class name="testCasesOrHRM.TC_003_addEmployee"/>
     </classes>
   </test> <!-- OrHRM_test -->
 </suite> <!-- Suite -->

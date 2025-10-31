@@ -11,7 +11,7 @@ import utilities.DataProviders;
 public class TC_003_addEmployee extends testBaseClass2_OHRM{
 	
 	@Test(groups = {"sanity"}, dataProvider = "addEmpData", dataProviderClass = DataProviders.class)
-	public void verify_addEmplyee(String fname, String mname, String lname, String date, String maritalstatus) throws InterruptedException {
+	public void verify_addEmplyee(String fname, String mname, String lname, String date, String maritalstatus, String dob, String bloodGroup, String test_data) throws InterruptedException {
 		
 		PB_002_PIM pim = new PB_002_PIM(driver);
 		pim.click_PIM();
@@ -33,6 +33,12 @@ public class TC_003_addEmployee extends testBaseClass2_OHRM{
 		addEmp.select_Nationality();
 		Thread.sleep(2000);
 		addEmp.select_marital_satus();
+		addEmp.dobSelection(dob);
+		addEmp.radio_male();
+		addEmp.btn_personalDetails();
+		addEmp.selValBloodType(bloodGroup);
+		addEmp.testFiles(test_data);
+		addEmp.btn_CustomDetails();
 	}
 
 }

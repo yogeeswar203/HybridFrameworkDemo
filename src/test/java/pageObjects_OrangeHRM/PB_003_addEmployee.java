@@ -21,7 +21,7 @@ public class PB_003_addEmployee extends BasePage{
 	WebElement add_Employee;
 	
 	
-	@FindBy(xpath="//input[@name='firstName']1")
+	@FindBy(xpath="//input[@name='firstName']")
 	WebElement txt_Fname;
 	
 	@FindBy(xpath="//input[@name='middleName']")
@@ -76,6 +76,21 @@ public class PB_003_addEmployee extends BasePage{
 	// adding xpath for commit purpose
 	@FindBy(xpath="")
 	WebElement e1;
+	
+	@FindBy(xpath="(//div[@class='oxd-date-input'])[2]//input")
+	WebElement text_dob;
+	
+	@FindBy(xpath="(//input[@type='radio']//following-sibling::span)[1]")
+	WebElement radio_male;
+	
+	@FindBy(xpath="(//button[@type='submit'])[1]")
+	WebElement save_personalDetails;
+	
+	@FindBy(xpath="(//button[@type='submit'])[2]")
+	WebElement save_customFields;
+	
+	@FindBy(xpath="(//label[text()='Employee Id']/../following::input)[8]")
+	WebElement text_test_Field;
 
 	
 	
@@ -121,6 +136,7 @@ public class PB_003_addEmployee extends BasePage{
 	}
 	
 	
+	
 	public void dateSelection(String date) {
 		drp_ledate.click();
 		drp_ledate.sendKeys(date);
@@ -128,6 +144,15 @@ public class PB_003_addEmployee extends BasePage{
 		
 		
 	}
+	
+	public void dobSelection(String dob) {
+		text_dob.click();
+		text_dob.sendKeys(dob);
+		text_dob.click();
+		
+		
+	}
+	
 	
 	public void select_marital_satus() {
 		selectValueFromdropdown("Singlew");
@@ -158,7 +183,47 @@ public class PB_003_addEmployee extends BasePage{
 	}
 	
 	
+	public By drp_bloodType = By.xpath("(//div[@class='oxd-select-text-input'])[3]"); 
+	public By all_optbd = By.xpath("//div[@role='option']//span"); 
 	
+	public void selValBloodType(String field)
+	{
+		driver.findElement(drp_bloodType).click();
+		myWait(driver.findElement(all_optbd), 0);
+		List<WebElement> allOPT = driver.findElements(all_optbd);
+		boolean opt_found = false;
+		
+		for(WebElement op:allOPT)
+		{
+			if(op.getText().trim().equalsIgnoreCase(field))
+			{
+				op.click();
+				opt_found = true;
+				break;
+			}
+		}
+		if (!opt_found) {
+            System.err.println("Option '" + opt_found + "' not found in the dropdown.");
+        }
+	}
+	
+	
+
+	public void radio_male() {
+		clickButton(radio_male);
+	}
+	
+	public void testFiles(String test_data) {
+		text_test_Field.sendKeys(test_data);
+	}
+	
+	public void btn_personalDetails() {
+		clickButton(save_personalDetails);
+	}
+	
+	public void btn_CustomDetails() {
+		clickButton(save_customFields);
+	}
 	
 	
 	

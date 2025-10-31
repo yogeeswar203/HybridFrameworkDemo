@@ -19,6 +19,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import pageObjects_OrangeHRM.PB_001_Login_OrangeHRM;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -58,6 +61,14 @@ public class testBaseClass2_OHRM {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 		Thread.sleep(5000);
+		
+		PB_001_Login_OrangeHRM pborm = new PB_001_Login_OrangeHRM(driver);
+		
+		pborm.eneter_txt_uname(p.getProperty("ohuserName"));
+		logger.info("User has entered the user name");
+		pborm.enter_txt_pass(p.getProperty("ohpassword"));
+		logger.info("User has entered the password");
+		pborm.btn_login();
 		/*
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
