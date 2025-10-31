@@ -20,6 +20,9 @@ public class PB_001_Login_OrangeHRM  extends BasePage{
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement btn_login;
 	
+	@FindBy(xpath="//h6['Dashboard']")
+	WebElement text_dashBoard;
+	
 	
 	
 	
@@ -33,6 +36,17 @@ public class PB_001_Login_OrangeHRM  extends BasePage{
 	
 	public void btn_login() {
 		btn_login.click();;
+	}
+	
+	public void verifydashBorad() {
+		String act_dash =text_dashBoard.getText();
+		if(act_dash.equals("Dashboard"))
+		{
+			System.out.println("Titile is matched");
+		}else
+		{
+			System.out.println("Title is not matched");
+		}
 	}
 	
 

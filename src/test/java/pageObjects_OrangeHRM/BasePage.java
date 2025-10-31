@@ -88,28 +88,6 @@ public class BasePage {
 		}
 	}
 	
-	public By drp_click = By.xpath("(//div[@class='oxd-select-text-input'])[2]"); 
-	public By all_opt = By.xpath("//div[@role='option']//span"); 
 	
-	public void selectValueFromdropdown(String field)
-	{
-		driver.findElement(drp_click).click();
-		myWait(driver.findElement(all_opt), 0);
-		List<WebElement> allOPT = driver.findElements(all_opt);
-		boolean opt_found = false;
-		
-		for(WebElement op:allOPT)
-		{
-			if(op.getText().trim().equalsIgnoreCase(field))
-			{
-				op.click();
-				opt_found = true;
-				break;
-			}
-		}
-		if (!opt_found) {
-            System.err.println("Option '" + opt_found + "' not found in the dropdown.");
-        }
-	}
 
 }

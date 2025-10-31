@@ -29,8 +29,9 @@ public class testBaseClass {
 	public Properties p;
 	public Properties prfile;
 	
-	@Parameters({"os", "browser"})
+	
 	@BeforeClass(groups = {"sanity","regression","master","reg"})
+	@Parameters({"os", "browser"})
 	public void setUp(String os, String br) throws IOException, InterruptedException {
 		// Loading the Configuration files
 		FileReader configFile = new FileReader("./src//test//resources//config.properties"); 
@@ -77,7 +78,7 @@ public class testBaseClass {
 	
 	public String randomString() {
 			
-			@SuppressWarnings("deprecation")
+			
 			String generatedString =RandomStringUtils.randomAlphabetic(5);
 			
 			return generatedString;
@@ -85,7 +86,7 @@ public class testBaseClass {
 		
 		public String randomNumber() {
 			
-			@SuppressWarnings("deprecation")
+		
 			String generatednum =RandomStringUtils.randomNumeric(9);
 			
 			return generatednum;
@@ -93,9 +94,9 @@ public class testBaseClass {
 		
 		public String randomAlphaNumaric() {
 			
-			@SuppressWarnings("deprecation")
+			
 			String generatednum =RandomStringUtils.randomNumeric(3);
-			@SuppressWarnings("deprecation")
+			
 			String generatedString =RandomStringUtils.randomAlphabetic(5);
 			 
 			

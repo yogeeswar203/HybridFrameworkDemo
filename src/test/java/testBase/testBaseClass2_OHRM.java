@@ -2,6 +2,7 @@ package testBase;
 
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -18,9 +19,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
-import pageObjects_OrangeHRM.PB_001_Login_OrangeHRM;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -39,7 +37,8 @@ public class testBaseClass2_OHRM {
 		p = new Properties();
 		p.load(configFile);
 		
-		
+		prfile = new Properties();
+		prfile.load(configFile);
 		
 		// calling the Logger 
 		logger = LogManager.getLogger(this.getClass());
@@ -58,16 +57,7 @@ public class testBaseClass2_OHRM {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		PB_001_Login_OrangeHRM pborm = new PB_001_Login_OrangeHRM(driver);
-		
-		pborm.eneter_txt_uname(p.getProperty("ohuserName"));
-		logger.info("User has entered the user name");
-		pborm.enter_txt_pass(p.getProperty("ohpassword"));
-		logger.info("User has entered the password");
-		pborm.btn_login();
-		logger.info("User has clicked on the login button");
-		
-		
+		Thread.sleep(5000);
 		/*
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
@@ -113,19 +103,33 @@ public class testBaseClass2_OHRM {
 		}
 		
 		
-		public String captureScreenshot(String tname) throws Exception {
-			String timeStamp=new SimpleDateFormat("yyyyMMsshhmmss").format(new Date());
-		
-			TakesScreenshot takesScreenShot = (TakesScreenshot)driver;
-			Thread.sleep(1000);
-			File sourceFile = takesScreenShot.getScreenshotAs(OutputType.FILE);
-			String targetFilepath = System.getProperty("user.dir")+"\\screenshots\\" + tname+"_"+timeStamp+".png";
-			File targetFile = new File(targetFilepath);
+		public String captureScreenshot(String tname) throws IOException{
+			/*String timeStamp=new SimpleDateFormat("yyyyMMsshhmmss").format(new Date());
 			
+			 * TakesScreenshot takesScreenShot = (TakesScreenshot)driver; File sourceFile =
+			 * takesScreenShot.getScreenshotAs(OutputType.FILE);
+			 * 
+			 * String targetFilepath =
+			 * System.getProperty("user.dir")+"\\screenshots\\" + tname+"_"+timeStamp+".jpeg
+			 * "; File targetFile = new File(targetFilepath);
+			 * 
+			 * 
+			 * sourceFile.renameTo(targetFile);
+			 * 
+			 * return targetFilepath;
+			 */
+			
+			String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+			
+			TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+			File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+			
+			String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".jpeg";
+			File targetFile=new File(targetFilePath);
 			
 			sourceFile.renameTo(targetFile);
-			
-			return targetFilepath;
+				
+			return targetFilePath;
 			
 
 			

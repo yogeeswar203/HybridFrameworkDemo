@@ -1,2 +1,0 @@
-This the testing file for pulling the data from master
-yes file is received successfully to local

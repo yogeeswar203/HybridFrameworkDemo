@@ -1,5 +1,8 @@
 package pageObjects_OrangeHRM;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,7 +21,7 @@ public class PB_003_addEmployee extends BasePage{
 	WebElement add_Employee;
 	
 	
-	@FindBy(xpath="//input[@name='firstName']")
+	@FindBy(xpath="//input[@name='firstName']1")
 	WebElement txt_Fname;
 	
 	@FindBy(xpath="//input[@name='middleName']")
@@ -127,10 +130,32 @@ public class PB_003_addEmployee extends BasePage{
 	}
 	
 	public void select_marital_satus() {
-		selectValueFromdropdown("Single");
+		selectValueFromdropdown("Singlew");
 	}
 
+	public By drp_click = By.xpath("(//div[@class='oxd-select-text-input'])[2]"); 
+	public By all_opt = By.xpath("//div[@role='option']//span"); 
 	
+	public void selectValueFromdropdown(String field)
+	{
+		driver.findElement(drp_click).click();
+		myWait(driver.findElement(all_opt), 0);
+		List<WebElement> allOPT = driver.findElements(all_opt);
+		boolean opt_found = false;
+		
+		for(WebElement op:allOPT)
+		{
+			if(op.getText().trim().equalsIgnoreCase(field))
+			{
+				op.click();
+				opt_found = true;
+				break;
+			}
+		}
+		if (!opt_found) {
+            System.err.println("Option '" + opt_found + "' not found in the dropdown.");
+        }
+	}
 	
 	
 	

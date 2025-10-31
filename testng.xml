@@ -9,7 +9,7 @@
 	</groups>
 	
 	<listeners>
-		<listener class-name="utilities.ExtentReportManager"/>
+		<listener class-name="utilities.ExtentReportManager2"/>
 	</listeners>
   <test thread-count="5" name="OrHRM_test">
   	<parameter name="os" value="windows"/>
@@ -17,7 +17,7 @@
     <classes>
       <class name="testCasesOrHRM.TC_001_login_orangeHRM"/>
       <!--  <class name="testCasesOrHRM.TC_002_EmployeeSearch"/> -->
-       <!-- <class name="testCasesOrHRM.TC_003_addEmployee"/> -->
+      <!--  <class name="testCasesOrHRM.TC_003_addEmployee"/> -->
     </classes>
   </test> <!-- OrHRM_test -->
 </suite> <!-- Suite -->

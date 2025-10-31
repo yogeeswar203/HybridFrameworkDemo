@@ -4,9 +4,9 @@ import org.testng.annotations.Test;
 
 
 import pageObjects_OrangeHRM.PB_001_Login_OrangeHRM;
-import testBase.testBaseClass;
+import testBase.testBaseClass2_OHRM;
 
-public class TC_001_login_orangeHRM extends testBaseClass{
+public class TC_001_login_orangeHRM extends testBaseClass2_OHRM{
 	
 	
 	@Test(groups = "sanity")
@@ -21,6 +21,7 @@ public class TC_001_login_orangeHRM extends testBaseClass{
 	logger.info("User has entered the password");
 	pborm.btn_login();
 	logger.info("User has clicked on the login button");
+	pborm.verifydashBorad();
 	
 	logger.info("**********************Test Case 001 Orange HRM is completed **********************");
 	
