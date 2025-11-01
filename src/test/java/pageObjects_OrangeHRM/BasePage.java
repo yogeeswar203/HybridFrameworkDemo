@@ -51,6 +51,7 @@ public class BasePage {
 		try {
 			myWait(element, 5);
 			element.click();
+			
 		}catch(Exception e1)
 		{
 			e1.printStackTrace();
@@ -88,6 +89,27 @@ public class BasePage {
 		}
 	}
 	
+	
+	public void selectValueFromHiddenDrp(WebElement btn_drp, List<WebElement>allOptions, String value)
+	{
+	
+		btn_drp.click();
+		boolean opt_status = false;
+		
+		for(WebElement option:allOptions)
+		{
+			if(option.getText().trim().equalsIgnoreCase(value))
+			{
+				option.click();
+				opt_status = true;
+				break;
+			}
+		}
+		
+		if(!opt_status) {
+			System.err.println("Option "+value+" is not found in the dropdown");
+		}
+	}
 	
 
 }

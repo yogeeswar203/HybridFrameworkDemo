@@ -13,13 +13,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCasesOrHRM.TC_003_addEmployee">
+      <class name="testCasesOrHRM.TC_004_AdminSearch">
         <methods>
           <include name="setUp"/>
-          <include name="verify_addEmplyee" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="search_admin_user"/>
         </methods>
-      </class> <!-- testCasesOrHRM.TC_003_addEmployee -->
+      </class> <!-- testCasesOrHRM.TC_004_AdminSearch -->
     </classes>
   </test> <!-- OrHRM_test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

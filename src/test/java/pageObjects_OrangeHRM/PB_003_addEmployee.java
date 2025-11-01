@@ -178,7 +178,7 @@ public class PB_003_addEmployee extends BasePage{
 			}
 		}
 		if (!opt_found) {
-            System.err.println("Option '" + opt_found + "' not found in the dropdown.");
+            System.err.println("Option '" + opt_found + " not found in the dropdown.");
         }
 	}
 	
